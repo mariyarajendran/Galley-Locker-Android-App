@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Security" >
+ <ScrollView
+          android:id="@+id/scrollView1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" >
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentTop="true"
+      android:layout_centerHorizontal="true"
+      android:orientation="vertical" >
+
+     
+
+         
+    
+    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/bl" />
+
+    <EditText
+        android:id="@+id/editphone1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:layout_above="@+id/editphone2"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+          android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:layout_marginTop="50dp"
+        android:hint="Phone 1"
+        android:inputType="phone" >
+
+        
+    </EditText>
+
+    <EditText
+        android:id="@+id/editphone2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:ems="10"
+        android:hint="Phone 2 (Optional)"
+        android:inputType="phone"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btnsave"
+        style="@style/button_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#d50000"
+        android:textColor="#fff"
+        android:text="Save"
+        android:textStyle="italic" />
+
+      </LinearLayout>
+  </ScrollView>
+</RelativeLayout>

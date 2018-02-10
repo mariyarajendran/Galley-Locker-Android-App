@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.l"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/llo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.l.Start"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.l.LL"
+            android:label="@string/title_activity_ll" >
+        </activity>
+        <activity
+            android:name="com.example.l.Videoview"
+            android:label="@string/title_activity_video_view" >
+        </activity>
+        <activity
+            android:name="com.example.l.L"
+            android:label="@string/title_activity_registration" >
+        </activity>
+        <activity
+            android:name="com.example.l.Login"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.example.l.Security"
+            android:label="@string/title_activity_security" >
+        </activity>
+        <activity
+            android:name="com.example.l.ChangePassword"
+            android:label="@string/title_activity_change_password" >
+        </activity>
+        <activity
+            android:name="com.example.l.Registration"
+            android:label="@string/title_activity_start" >
+        </activity>
+    </application>
+
+</manifest>
